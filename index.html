@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <script>
+        function validar(){
+            alert("Cadastro realizado com sucesso!");
+            alert("Clique em OK para continuar");
+        }
+    </script>
+    <style>
+        body{background-color: gray;}
+        h2{color: aliceblue;
+            background-color: black;
+            text-align: center;
+    }
+
+    </style>
+    <body>
+        
+        <h2>SITE DO BATMAN</h2>
+        <form name="form1" action="enviar.php" method="post"
+        onSubmit="return validar()">
+        Nome: <input name="nome" type="text"><br /><br />
+        Email: <input name="email" type="text"><br /><br />
+        Cidade: <input name="cidade" type="text"><br /><br />
+        <input type="submit" name="sbt" value="Enviar" />
+        </form>
+        <br /><br /><br /><br />
+        <table border="1">
+            <tr>
+                <th>Dia</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>350,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td>450,00</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <marquee behavior="alternate">
+            <img src="batman.jpg">
+        </marquee>
+    </body>
+</html>
